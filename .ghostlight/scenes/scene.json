@@ -1,0 +1,32 @@
+{
+  "config": {
+    "background": "#394778",
+    "width": 256,
+    "height": 256
+  },
+  "grid": {
+    "show": true,
+    "sizeX": 16,
+    "sizeY": 16
+  },
+  "actors": [
+    {
+      "id": "1",
+      "type_id": "player",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "props": {}
+    },
+    {
+      "id": "2",
+      "type_id": "metal",
+      "x": 0,
+      "y": 64,
+      "width": 128,
+      "height": 16,
+      "props": {}
+    }
+  ]
+}
