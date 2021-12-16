@@ -10,10 +10,11 @@
     "noImplicitAny": false,
     "downlevelIteration": true,
     "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "lib": [
       "esnext",
       "dom",
-      "dom.iterable",
+      "dom.iterable"
     ],
     "types": [
       "vite/client",
@@ -25,5 +26,5 @@
         "*"
       ]
     }
-  },
+  }
 }

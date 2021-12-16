@@ -1,30 +1,32 @@
-interface IScene {
-  config: IConfig
-  actors: IActor[]
+interface glScene {
+  config: glConfig
+  actors: glActor[]
 }
 
-interface IConfig {
+interface glConfig {
   background: string
   width: number
   height: number
 }
 
-interface IActor {
+interface glActor {
   id: string
   type_id: string
-  type?: string
-  texture?: string
+  type: string
+  texture: string
+  resize: glResizeOption
   x: number
   y: number
   width: number
   height: number
-  props: Object
+  props: { [key: string]: any }
 }
 
-interface IType {
+interface glType {
   id: string
   name: string
   texture: string
+  resize: glResizeOption
   props: {
     id: string
     name: string,
@@ -32,4 +34,4 @@ interface IType {
   }[]
 }
 
-type TResizeOption = "Disabled" | "Scale" | "Repeat" | "Sliced"
+type glResizeOption = "Disable" | "Scale" | "Repeat" | "Slice"
